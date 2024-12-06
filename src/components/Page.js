@@ -77,7 +77,7 @@ function Page() {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ query: input }),
+          body: JSON.stringify({ question: input }),
         });
 
         const data = await response.json();
@@ -89,7 +89,7 @@ function Page() {
 
         setMessages((prev) => [
           ...prev,
-          { type: "response", text: data.response || "No response from model" },
+          { type: "response", text: data.message || "No response from model" },
         ]);
       } catch (error) {
         const endTime = Date.now(); // Record the end time even on error

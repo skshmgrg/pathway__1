@@ -1,7 +1,7 @@
 
 import React, { useState, useRef, useEffect, useContext } from "react";
 import { SiChatbot } from "react-icons/si";
-import logo from "../pathway.webp";
+import logo from "../pathway.png";
 import SliderBar from "./Sliderbar";
 import { functionsContext } from "../context/context";
 import { FaTemperatureHalf } from "react-icons/fa6";
