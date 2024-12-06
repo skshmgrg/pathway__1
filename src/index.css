@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-wave {
+  animation: wave 10s linear infinite;
+}
+
+@keyframes wave2 {
+  20% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-wave2 {
+  animation: wave2 10s linear infinite;
+}

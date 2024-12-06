@@ -1,4 +1,3 @@
-
 import React, { useContext, useEffect, useRef } from "react";
 import { UserMessage } from "./UserMessage";
 import { ResponseMessage } from "./ResponseMessage";
@@ -9,15 +8,12 @@ export const Chat = () => {
   const global = useContext(functionsContext);
   const containerRef = useRef(null);
 
-  
   useEffect(() => {
     // Scroll to the bottom whenever messages change
     if (containerRef.current) {
       containerRef.current.scrollTop = containerRef.current.scrollHeight;
     }
   }, [global.messages]);
-
-
 
   return (
     <>

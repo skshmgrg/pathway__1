@@ -8,7 +8,7 @@ export const UserMessage = (props) => {
         {props.message}
       </div>
       <div className="flex justify-center items-center">
-        <FaRegUser 
+        <FaRegUser
           size={25}
           style={{ width: "50px", padding: "2px", margin: "2px" }}
         />
